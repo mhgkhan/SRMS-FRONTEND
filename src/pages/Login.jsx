@@ -26,50 +26,43 @@ const Login = () => {
 
 
   return (
-     <main className="min-h-screen bg-gray-50 flex items-center justify-center">
-      <div className="bg-gray-700 text-white p-8 rounded-lg shadow-lg w-[85%] max-w-md">
-        <h1 className="text-3xl font-bold mb-4 text-center">Student Login</h1>
-        <p className="mb-8 text-center">Please enter your credentials to access your results</p>
-        <form onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label className="block text-sm font-medium mb-2" htmlFor="studentID">
-              Student ID
-            </label>
-            <div className="flex items-center border border-gray-300 rounded-md">
-              <FaUser className="text-gray-400 mx-2" />
-              <input
-                type="text"
-                id="studentID"
-                className="w-full p-2 bg-gray-800 text-white border-none outline-none"
-                value={studentID}
-                onChange={(e) => setStudentID(e.target.value)}
-              />
-            </div>
-            {errors.studentID && <p className="text-red-500 text-sm mt-2">{errors.studentID}</p>}
+    <main className='min-h-screen bg-gray-100'>
+      <div className="container mx-auto flex items-center justify-center">
+
+        <form className="md:w-[70%] mt-10 w-[90%] rounded-md shadow-md shadow-gray-300 mx-auto">
+
+          <div className="head w-full bg-gray-700 px-3 py-2 rounded-md">
+            <h1 className="text-4xl text-white font-bold">Login </h1>
+            <p className="text-gray-200 text-lg">Login to acces your account </p>
+
+            <h3 className="text-xl text-white mt-3 font-bold">Instuctions</h3>
+            <ul className='px-5 list-disc'>
+              <li className='list-item text-white'>You must have an account here</li>
+              <li className='list-item text-white'>Enter your global roll number</li>
+              <li className='list-item text-white'>Enter your password</li>
+            </ul>
           </div>
-          <div className="mb-4">
-            <label className="block text-sm font-medium mb-2" htmlFor="password">
-              Password
-            </label>
-            <div className="flex items-center border border-gray-300 rounded-md">
-              <FaLock className="text-gray-400 mx-2" />
-              <input
-                type="password"
-                id="password"
-                className="w-full p-2 bg-gray-800 text-white border-none outline-none"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </div>
-            {errors.password && <p className="text-red-500 text-sm mt-2">{errors.password}</p>}
+
+
+          <form className='mt-3'>
+            <input className='md:w-[70%] w-full text-lg  block mx-auto border border-gray-700 p-2 m-2 rounded-md outline-none text-gray-700' type="text" name="stdid" placeholder='Student Id' required />
+            <input className='md:w-[70%] w-full text-lg  block mx-auto border border-gray-700 p-2 m-2 rounded-md outline-none text-gray-700' type="password" name='stdpassword' placeholder='Password' required />
+            <button type="submit" className='text-lg text-center w-auto p-2 border border-gray-700 mt-4 rounded-md outline-none bg-gray-700 text-white block mx-auto'>Login</button>
+          </form>
+
+          <div className="head w-full bg-gray-700 px-3 py-2 rounded-md mt-5">
+           <div className="links w-full text-center flex items-start justify-center gap-2 flex-wrap ">
+            <p className='text-white'>Not have an account <a className='text-blue-300' href="#">Signup</a> </p>
+            <p className='text-white'>Forget password <a className='text-blue-300' href="#">Click here </a> </p>
+           </div>
           </div>
-          <button
-            type="submit"
-            className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-md transition duration-300"
-          >
-            Login
-          </button>
+
+
+
+
         </form>
+
+
       </div>
     </main>
   );

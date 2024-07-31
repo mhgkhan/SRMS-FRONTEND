@@ -24,7 +24,7 @@ const Header = () => {
               <Link className='text-white p-2 font-bold hover:bg-white hover:text-black rounded-lg transition-all duration-500' to={'/studentresult'}>RESULT</Link>
             </li>
             <li>
-              <Link className='text-white p-2 font-bold hover:bg-white hover:text-black rounded-lg transition-all duration-500' to={'/signup'}>LOGIN</Link>
+              <Link className='text-white p-2 font-bold hover:bg-white hover:text-black rounded-lg transition-all duration-500' to={'/login'}>LOGIN</Link>
             </li>
           </ul>
         </nav>
