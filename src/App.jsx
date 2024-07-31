@@ -7,6 +7,7 @@ import Profile from "./pages/profile/Profile"
 import Signup from "./pages/Signup"
 
 const App = () => {
+
   return (
     <BrowserRouter>
       <main className="bg-gray-950 min-h-screen">
