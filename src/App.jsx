@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 import Home from "./pages/Home"
 import Login from "./pages/Login"
 import Profile from "./pages/profile/Profile"
@@ -10,7 +10,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <main className="bg-gray-950 min-h-screen">
+      <main className="bg-gray-50 min-h-screen">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
