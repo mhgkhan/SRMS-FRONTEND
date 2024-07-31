@@ -2,27 +2,10 @@ import React, { useState } from 'react'
 import { FaLock, FaUser } from 'react-icons/fa';
 
 const Login = () => {
-  const [studentID, setStudentID] = useState('');
-  const [password, setPassword] = useState('');
-  const [errors, setErrors] = useState({});
 
-  const validate = () => {
-    const errors = {};
-    if (!studentID) errors.studentID = 'Student ID is required';
-    if (!password) errors.password = 'Password is required';
-    return errors;
-  };
+  const [studentId,setStudentId] = useState("")
+  const [studentPass,setStudentPass] = useState("")
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const validationErrors = validate();
-    if (Object.keys(validationErrors).length === 0) {
-      // Submit form
-      console.log('Form submitted');
-    } else {
-      setErrors(validationErrors);
-    }
-  };
 
 
   return (
