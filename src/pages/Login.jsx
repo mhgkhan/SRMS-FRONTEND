@@ -2,7 +2,11 @@ import React from 'react'
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <main className="bg-gray-50 min-h-screen">
+      <div className="container">
+        hello world 
+      </div>
+    </main>
   )
 }
 

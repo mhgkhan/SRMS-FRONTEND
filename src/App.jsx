@@ -10,7 +10,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <main className="bg-gray-50 min-h-screen">
+   
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -19,7 +19,6 @@ const App = () => {
           <Route path="/signup" element={<Signup />} />
         </Routes>
         <Footer />
-      </main>
     </BrowserRouter>
   )
 }
