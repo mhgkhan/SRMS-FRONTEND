@@ -9,7 +9,7 @@ import Signup from "./pages/Signup"
 const App = () => {
   return (
     <BrowserRouter>
-      <main>
+      <main className="bg-gray-950 min-h-screen">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
