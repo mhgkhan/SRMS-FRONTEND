@@ -66,7 +66,7 @@ const Login = () => {
     <main className='min-h-screen bg-gray-100'>
       <div className="container mx-auto flex items-center justify-center">
 
-        <div className="md:w-[70%] mt-10 w-[90%] rounded-md shadow-md shadow-gray-300 mx-auto">
+        <div className="md:w-[70%] mt-10 w-[90%] rounded-md shadow-md shadow-gray-300 mx-auto bg-white">
 
           <div className="head w-full bg-gray-700 px-3 py-2 rounded-md">
             <h1 className="text-4xl text-white font-bold">Login </h1>
@@ -82,10 +82,10 @@ const Login = () => {
 
 
           <form action='#' className='mt-3' onSubmit={submitForm} method='post'>
-            <input onChange={changeLoginInputs} className='md:w-[70%] w-full text-lg  block mx-auto border border-gray-700 p-2 m-2 rounded-md outline-none text-gray-700' type="text" name="studentId" placeholder='Student Id' required />
-            {stdIdErrors.error ? <div className="text-red-800 w-full text-xs mt-[-5px] md:w-[70%] mx-auto">{stdIdErrors.message}</div> : ""}
-            <input onChange={changeLoginInputs} className='md:w-[70%] w-full text-lg  block mx-auto border border-gray-700 p-2 m-2 rounded-md outline-none text-gray-700' type="password" name='studentPassword' placeholder='Password' required />
-            {stdPassErrors.error ? <div className="text-red-800 w-full text-xs mt-[-5px] md:w-[70%] mx-auto">{stdPassErrors.message}</div> : ""}
+            <input onChange={changeLoginInputs} className='md:w-[70%] w-[95%] text-lg  block mx-auto border border-gray-700 p-2 m-2 rounded-md outline-none text-gray-700' type="text" name="studentId" placeholder='Student Id' required />
+            {stdIdErrors.error ? <div className="text-red-800 w-[95%] text-xs mt-[-5px] md:w-[70%] mx-auto">{stdIdErrors.message}</div> : ""}
+            <input onChange={changeLoginInputs} className='md:w-[70%] w-[95%] text-lg  block mx-auto border border-gray-700 p-2 m-2 rounded-md outline-none text-gray-700' type="password" name='studentPassword' placeholder='Password' required />
+            {stdPassErrors.error ? <div className="text-red-800 w-[95%] text-xs mt-[-5px] md:w-[70%] mx-auto">{stdPassErrors.message}</div> : ""}
             <button disabled={inputs.studentId.length<1}  type="submit" className='disabled:bg-gray-600 hover:bg-gray-100 hover:text-gray-950 transition-all duration-300 text-lg text-center w-auto p-2 border border-gray-700 mt-4 rounded-md outline-none bg-gray-700 text-white block mx-auto'>Login</button>
           </form>
 

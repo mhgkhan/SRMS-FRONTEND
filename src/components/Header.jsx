@@ -18,13 +18,13 @@ const Header = () => {
           <ul className='flex items-end justify-center gap-2'>
 
             <li>
-              <Link className='text-white p-2 font-bold hover:bg-white hover:text-black rounded-lg transition-all duration-500' to={'/'}>HOME</Link>
+              <Link className='text-white p-2 font-bold hover:bg-gray-100 hover:text-black rounded-lg transition-all duration-500' to={'/'}>HOME</Link>
             </li>
             <li>
-              <Link className='text-white p-2 font-bold hover:bg-white hover:text-black rounded-lg transition-all duration-500' to={'/studentresult'}>RESULT</Link>
+              <Link className='text-white p-2 font-bold hover:bg-gray-100 hover:text-black rounded-lg transition-all duration-500' to={'/studentresult'}>RESULT</Link>
             </li>
             <li>
-              <Link className='text-white p-2 font-bold hover:bg-white hover:text-black rounded-lg transition-all duration-500' to={'/login'}>LOGIN</Link>
+              <Link className='text-white p-2 font-bold hover:bg-gray-100 hover:text-black rounded-lg transition-all duration-500' to={'/login'}>LOGIN</Link>
             </li>
           </ul>
         </nav>
