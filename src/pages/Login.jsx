@@ -1,10 +1,7 @@
 import { useState } from 'react'
-// import { FaAllergies, FaLock, FaUser } from 'react-icons/fa';
+
 
 const Login = () => {
-
-  // const [studentId,setStudentId] = useState("")
-  // const [studentPass,setStudentPass] = useState("")
 
   const [inputs, setInputs] = useState({
     studentId: "",

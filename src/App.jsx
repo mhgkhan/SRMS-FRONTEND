@@ -4,9 +4,9 @@ import Footer from "./components/Footer"
 import Home from "./pages/Home"
 import Login from "./pages/Login"
 import Profile from "./pages/profile/Profile"
-import Signup from "./pages/Signup"
 
 const App = () => {
+  // console.log(import.meta.env.API_DOMAIN)
 
   return (
     <BrowserRouter>
@@ -16,7 +16,6 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/signup" element={<Signup />} />
         </Routes>
         <Footer />
     </BrowserRouter>
