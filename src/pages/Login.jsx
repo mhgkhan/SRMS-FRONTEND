@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import {ApiDomain} from "./../config/DomainUrls"
 import toast, { Toaster } from 'react-hot-toast'
+import { useNavigate } from 'react-router-dom'
 
 
 
 const Login = () => {
-
+  
+  const nav = useNavigate();
   const [inputs, setInputs] = useState({
     studentId: "",
     studentPassword: ""
@@ -60,6 +62,8 @@ const Login = () => {
     e.preventDefault()
     const checkingValidate = checkValidate();
 
+
+
     if (checkingValidate) {
       // console.log("data are valid")
       // console.log(inputs)
@@ -80,10 +84,13 @@ const Login = () => {
         if(reqAndRes.success){
           setIsResErr(false)
           setRecieveData(reqAndRes.data)
+          // console.log(reqAndRes.data.token)
+          localStorage.setItem("usertoken", reqAndRes.data.token)
           toast.success("Logged sucessfully...",{
             icon:"🎉"
           })
           setInputs({studentId:"", studentPassword:""})
+          nav("/")
         }
         else{
           setIsResErr(true)
