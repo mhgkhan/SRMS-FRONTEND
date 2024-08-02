@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom'
 const Login = () => {
   
   const nav = useNavigate();
+  
   const [inputs, setInputs] = useState({
     studentId: "",
     studentPassword: ""
