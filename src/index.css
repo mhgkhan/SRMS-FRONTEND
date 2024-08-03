@@ -21,6 +21,7 @@
 
 @media screen and (max-width:765px){
     .student-profile{
-        border-radius: 300px 300px 10px 10px !important;
+        /* border-radius: 300px 300px 10px 10px !important; */
+        border-radius: 10px !important;
     }
 }
