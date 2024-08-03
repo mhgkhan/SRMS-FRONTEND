@@ -76,8 +76,8 @@ const Home = () => {
                 heading={"Personal Info"} />
 
               <StudentInfoCard
-                data={[{ title: "Full Name", desc: "Muhammad Hasnain" }, { title: "F/Name", desc: "Planki Khan" }, { title: "DOB", desc: "01/01/2000" },{title:"Class", desc:"10th"},{title:"Roll No", desc:12},{title:"Global Id",desc:"10th12"}]}
-                heading={"Personal Info"} />
+                data={[{ title: "Student Attandence", desc: "Good" }, { title: "Behavior", desc: "Excellent" }, { title: "Total Passed/Fail Tests", desc: "30/12" },{title:"Bullshet", desc:"No"},{title:"Hardwork", desc:"Yes"},{title:"Sport Player of",desc:"Volley Ball"}]}
+                heading={"Student Perfornmance"} />
 
             </div>
 
@@ -88,8 +88,10 @@ const Home = () => {
             <img src="/images/myimg.jpg" alt="my profile picture" className='md:w-[250px] w-[150px] mx-auto block md:h-[250px] h-[160px] bg-blue-400 rounded-full shadow-md shadow-gray-500' />
             <h2 className="text-xl text-white italic text-center w-full mt-2 ">Mr.</h2>
             <h1 className="text-4xl text-white font-bold text-center w-full ">M. Hasnain</h1>
-            <h2 className="text-lg text-white italic text-center w-full mt-2 ">S/D/W/O</h2>
+            <h2 className="text-lg text-white italic text-center w-full mt-2 ">S/O</h2>
             <h1 className="text-2xl text-white font-bold text-center w-full ">Mir Samad</h1>
+            <h2 className="text-lg text-white italic text-center w-full mt-2 ">Role/</h2>
+            <h1 className="text-2xl text-white font-bold text-center w-full ">Student</h1>
           </div>
         </section>
       </div>
