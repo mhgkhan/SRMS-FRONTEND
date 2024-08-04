@@ -47,19 +47,19 @@ const Home = () => {
     }
   }
 
-  useEffect(() => {
-    if (localStorage.getItem("usertoken")) {
+  // useEffect(() => {
+  //   if (localStorage.getItem("usertoken")) {
 
-      setUserToken(localStorage.getItem("usertoken"))
-      // api for checking if this token is valid or not and check if this user are eists or not 
-      checkAuthorize(localStorage.getItem("usertoken"))
+  //     setUserToken(localStorage.getItem("usertoken"))
+  //     // api for checking if this token is valid or not and check if this user are eists or not 
+  //     checkAuthorize(localStorage.getItem("usertoken"))
 
 
-    }
-    else {
-      nav("/login")
-    }
-  }, [])
+  //   }
+  //   else {
+  //     nav("/login")
+  //   }
+  // }, [])
 
   return (
     <main className="bg-gray-50 min-h-screen">
